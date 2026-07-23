@@ -67,3 +67,18 @@ vim.api.nvim_create_autocmd("BufReadPre", {
     end)
   end,
 })
+
+-- Column demarcation for 80 characters
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = {
+    "python",
+    "markdown",
+    "c",
+    "cpp",
+    "lua",
+    "rust",
+  },
+  callback = function()
+    vim.opt_local.colorcolumn = "80,120"
+  end,
+})
