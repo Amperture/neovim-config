@@ -27,6 +27,7 @@ return {
         -- active item until Tab is pressed.
         ["<C-CR>"] = { "select_and_accept", "fallback" },
         ["<CR>"] = { "fallback" },
+        ["<S-Space>"] = { "show", "show_documentation", "hide_documentation" },
       },
     },
   },
