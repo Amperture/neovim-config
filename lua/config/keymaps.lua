@@ -8,6 +8,3 @@ vim.keymap.set("n", "<C-j>", ":TmuxNavigateDown<CR>", { silent = true })
 vim.keymap.set("n", "<C-k>", ":TmuxNavigateUp<CR>", { silent = true })
 vim.keymap.set("n", "<C-l>", ":TmuxNavigateRight<CR>", { silent = true })
 
--- Org SuperAgenda
--- vim.keymap.set("n", "<leader>oa", ":OrgSuperAgenda<CR>", { silent = true })
-vim.keymap.set("n", "<leader>oA", ":OrgSuperAgenda!<CR>", { silent = true })

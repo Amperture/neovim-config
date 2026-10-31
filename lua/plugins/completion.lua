@@ -27,8 +27,16 @@ return {
         -- active item until Tab is pressed.
         ["<C-CR>"] = { "select_and_accept", "fallback" },
         ["<CR>"] = { "fallback" },
-        ["<S-Space>"] = { "show", "show_documentation", "hide_documentation" },
+        -- ["<S-Space>"] = { "show", "show_documentation", "hide_documentation" },
       },
+    },
+  },
+
+  -- get rid of inline hints in rust
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      inlay_hints = { enabled = false },
     },
   },
 }
